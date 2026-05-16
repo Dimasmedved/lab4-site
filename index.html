@@ -1,129 +1,81 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Тестовый сайт</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Market</title>
 
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "wkvfuh6oay");
-    </script>
+<style>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
 
-        header {
-            background: #111827;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-        }
+body{
+    background:#0f172a;
+    color:white;
+}
 
-        .container {
-            text-align: center;
-            padding: 100px 20px;
-        }
+header{
+    background:#111827;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
 
-        h1 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
 
-        p {
-            color: #cbd5f5;
-        }
+.hero{
+    text-align:center;
+    padding:100px 20px;
+}
 
-        .buttons {
-            margin-top: 30px;
-        }
+.button{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
 
-        button {
-            padding: 15px 30px;
-            margin: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.2s;
-        }
+</style>
 
-        .buy {
-            background: #22c55e;
-            color: white;
-        }
-
-        .buy:hover {
-            background: #16a34a;
-        }
-
-        .info {
-            background: #3b82f6;
-            color: white;
-        }
-
-        .info:hover {
-            background: #2563eb;
-        }
-
-        .section {
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        .section:nth-child(even) {
-            background: #111827;
-        }
-
-        footer {
-            padding: 50px;
-            text-align: center;
-            color: gray;
-        }
-    </style>
 </head>
 <body>
 
 <header>
-    🚀 Тестовый сайт для юзабилити
+    <h1>Nova Market</h1>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="cart.html">Корзина</a>
+    </nav>
 </header>
 
-<div class="container">
-    <h1>Добро пожаловать</h1>
-    <p>Попробуйте взаимодействовать с сайтом</p>
+<section class="hero">
 
-    <div class="buttons">
-        <button class="buy">Купить</button>
-        <button class="info">Подробнее</button>
-    </div>
-</div>
+    <h2>Добро пожаловать в магазин игр</h2>
 
-<div class="section">
-    <h2>О продукте</h2>
-    <p>Описание продукта, преимущества и особенности.</p>
-</div>
+    <p>
+        Лучшие игры по выгодным ценам
+    </p>
 
-<div class="section">
-    <h2>Почему выбирают нас</h2>
-    <p>Качество, надежность и удобство использования.</p>
-</div>
+    <a href="catalog.html" class="button">
+        Открыть каталог
+    </a>
 
-<div class="section">
-    <h2>Отзывы</h2>
-    <p>Пользователи довольны сервисом.</p>
-</div>
-
-<footer>
-    ⬇ Нижняя часть сайта (редко используется)
-</footer>
+</section>
 
 </body>
 </html>
